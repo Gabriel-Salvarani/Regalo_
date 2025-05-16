@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Galería Romántica de Cumpleaños</title>
+    <link rel="stylesheet" href="Fotos/styles.css">
+    <style>
+        .swiper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .swiper-slide {
+            flex-shrink: 0;
+            width: auto;
+        }
+        .hidden-file-input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Álbum de fotos</h1>
+    <p>Sube tus momentos especiales</p>
+</header>
+
+<!-- Carrusel de ejemplo -->
+<div class="swiper" id="carrusel">
+    <div class="swiper-wrapper">
+        <!-- Imágenes existentes -->
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- Botón para subir archivo -->
+<div style="margin: 20px;">
+    <button id="uploadButton">Subir imagen</button>
+    <input type="file" id="fileInput" class="hidden-file-input" accept="image/*">
+</div>
+
+<div class="modal" id="imageModal">
+    <button class="close-btn" onclick="closeModal()">X</button>
+    <img id="modalImg" src="" alt="Imagen Ampliada">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('#carrusel', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '#carrusel .swiper-button-next',
+            prevEl: '#carrusel .swiper-button-prev',
+        },
+        freeMode: true,
+    });
+
+    document.getElementById('uploadButton').addEventListener('click', () => {
+        document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function (event) {
+        const files = event.target.files;
+        const wrapper = document.querySelector('#carrusel .swiper-wrapper');
+
+        for (const file of files) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const slide = document.createElement('div');
+                slide.className = 'swiper-slide';
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.alt = 'Imagen subida';
+                slide.appendChild(img);
+                wrapper.appendChild(slide);
+                swiper.update();
+            };
+
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+</body>
+</html>

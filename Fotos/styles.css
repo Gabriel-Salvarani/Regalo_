@@ -1,0 +1,169 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    }
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffc1c9;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+.swiper-conteiner{
+    display: block;
+}
+       .fondo-carrusel {
+    background: linear-gradient(to bottom, #fbc2eb, #a6c1ee); /* Fondo con gradiente */
+    height: 400px; /* Ajusta la altura del carrusel */
+    position: relative; /* Para poder posicionar el botón encima */
+}
+ .fondo-carrusel2 {
+    background: linear-gradient(to bottom, #f8c9d4, #fbc2eb); /* Fondo más suave y tierno */
+    height: 400px; /* Ajusta la altura del carrusel */
+    position: relative; /* Para poder posicionar el botón encima */
+    margin-top: 20px;
+}
+.fondo-carrusel3{
+  background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffb199);
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+}
+.fondo-carrusel4{
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ffb199);
+    height: 400px;
+    margin-top: 20px;
+    position: relative;
+}
+.button-container {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 15;
+    top: 30px;
+    left: 10px;
+}
+
+
+.add-button {
+position: absolute;
+transform: translateY(-50%);
+background-color: #ff6b6b;
+color: white;
+border: none;
+width: 50px;
+height: 50px;
+font-size: 30px;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+z-index: 15;
+}
+
+        .add-button:hover {
+        background-color: #e63946;
+        }
+
+        .hidden-file-input {
+            display: none;
+        }
+
+
+        .card-wrapper {
+            display: flex;
+            gap: 1rem;
+            padding: 2rem;
+            list-style: none;
+        }
+
+        .card-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            user-select: none;
+            max-width: 450px;
+            margin: 0 auto;
+            top: 80px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .gallery-item img, 
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .delete-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+        }
