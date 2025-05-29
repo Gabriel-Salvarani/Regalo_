@@ -1,394 +1,583 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <title>Galería Romántica de Cumpleaños</title>
-    <link rel="stylesheet" href="Fotos/styles.css">
-</head>
-<body>
-
-<header>
-    <h1>Álbum de fotos</h1>
-    <p>Sube tus momentos especiales</p>
-</header>
-
-
-<div class="swiper fondo-carrusel" id="carrusel">
-     <div class="button-container">
-     <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-
-    <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-    </div>
-    <div class="swiper-wrapper">
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja1.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja1.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja2.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja2.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja3.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja3.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja4.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja4.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja5.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja5.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja6.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja6.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja7.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja7.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja8.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja8.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja9.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja9.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja10.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja10.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja11.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja11.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja12.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja12.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja13.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja13.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja14.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja14.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja15.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja15.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja16.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja16.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja17.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja17.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja18.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja18.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja19.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja19.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja20.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja20.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja21.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja21.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja22.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja22.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja23.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja23.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja24.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja24.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja25.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja25.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja26.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja26.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja27.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja27.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja28.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja28.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja29.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja29.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja30.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja30.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/pareja31.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/pareja31.jpg')">
-        </div>
-    </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-</div>
-<div class="swiper fondo-carrusel2"id="carrusel2">
-     <div class="button-container">
-     <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-
-    <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-    </div>
-    <div class="swiper-wrapper">
-        <div class="swiper-slide card-item">
-            <img src="fotos/bry.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/bry1.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry1.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/bry2.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry2.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/bry3.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry3.jpg')">
-        </div>
-       <div class="swiper-slide card-item">
-            <img src="fotos/bry4.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry4.jpg')">
-        </div>
-       <div class="swiper-slide card-item">
-            <img src="fotos/bry5.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry5.jpg')">
-        </div>
-       <div class="swiper-slide card-item">
-            <img src="fotos/bry6.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry6.jpg')">
-        </div>
-               <div class="swiper-slide card-item">
-            <img src="fotos/bry7.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/bry7.jpg')">
-        </div>
-    </div>
-    <div class="swiper-button-prev prev2"></div>
-    <div class="swiper-button-next next2"></div>
-
-</div>
-<div class="swiper fondo-carrusel3"id="carrusel3">
-     <div class="button-container">
-     <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-
-    <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-    </div>
-    <div class="swiper-wrapper">
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia1.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia1.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia2.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia2.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia3.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia3.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia4.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia4.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia5.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia5.jpg')">
-        </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/familia6.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/familia6.jpg')">
-        </div>
-    </div>
-    <div class="swiper-button-prev prev2"></div>
-    <div class="swiper-button-next next2"></div>
-
-</div>
-
-
-<div class="modal" id="imageModal">
-    <button class="close-btn" onclick="closeModal()">X</button>
-    <img id="modalImg" src="" alt="Imagen Ampliada">
-</div>
-    <div class="swiper fondo-carrusel4 "id="carrusel4">
-        <div class="button-container">
-            <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-            <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-        </div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro1.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro1.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro2.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro2.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro3.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro3.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro4.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro4.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro5.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro5.jpg')">
-            </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/perro6.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro6.jpg')">
-        </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro7.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro7.jpg')">
-           </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro8.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro8.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro9.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro9.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro10.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro10.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro11.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro11.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro12.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro12.jpg')">
-            </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/perro13.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro13.jpg')">
-        </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro14.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro14.jpg')">
-           </div>
-                      <div class="swiper-slide card-item">
-                <img src="fotos/perro15.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro15.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro16.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro16.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro17.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro17.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro18.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro18.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="foto/perro19.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro19.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/perro20.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro20.jpg')">
-            </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/perro21.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/perro21.jpg')">
-        </div>
-    </div>
-        <div class="swiper-button-prev prev4"></div>
-        <div class="swiper-button-next next4"></div>
-</div>
-   <div class="swiper fondo-carrusel4 " id="carrusel5">
-        <div class="button-container">
-            <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-            <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-        </div>
-        <div class="swiper-wrapper">
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi1.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi1.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi2.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi2.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi3.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi3.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi4.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi4.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi5.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi5.jpg')">
-            </div>
-        <div class="swiper-slide card-item">
-            <img src="fotos/sofi6.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi6.jpg')">
-        </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi7.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi7.jpg')">
-           </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi8.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi8.jpg')">
-            </div>
-            <div class="swiper-slide card-item">
-                <img src="fotos/sofi9.jpg" alt="Foto" class="card-image" onclick="openModal('fotos/sofi9.jpg')">
-            </div>
-        </div>
-    <div class="swiper-button-prev prev5"></div>
-    <div class="swiper-button-next next5"></div>
-    </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
- document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.swiper').forEach((swiperElement) => {
-        new Swiper(swiperElement, {
-            loop: true,
-            loopAdditionalSlides: 3,
-            slidesPerView: 'auto', // Ajusta la cantidad de imágenes visibles
-            centeredSlides: true, // Centra las diapositivas
-            navigation: { 
-                nextEl: swiperElement.querySelector('.swiper-button-next'), 
-                prevEl: swiperElement.querySelector('.swiper-button-prev') 
-            },
-            pagination: {
-                el: swiperElement.querySelector('.swiper-pagination'),
-                clickable: true
-            }
-        });
-    });
-});
-document.addEventListener("DOMContentLoaded", function () {
-    // Asegúrate de que el carrusel esté inicializado al cargar la página
-    iniciarCarrusel();
-});
-
-function iniciarCarrusel() {
-    let carrusel = document.querySelector(".swiper"); // Ajusta la clase según tu código
-    if (carrusel) {
-        carrusel.style.display = "block"; // Asegúrate de que no esté oculto
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <title>Galería Romántica de Cumpleaños</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffc1c9;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper {
+      background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
+      height: 400px;
+      position: relative;
+    }
+
+    .button-container {
+      position: absolute;
+      transform: translateY(-50%);
+      z-index: 15;
+      top: 30px;
+      left: 10px;
+    }
+
+    .add-button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 15;
+    }
+
+    .add-button:hover {
+      background-color: #e63946;
+    }
+
+    .hidden-file-input {
+      display: none;
+    }
+
+    .card-item {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      user-select: none;
+      max-width: 450px;
+      margin: 0 auto;
+      top: 80px;
+    }
+
+    .card-image {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+      /* Botón de eliminar dentro del slide */
+  .delete-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .delete-button:hover {
+    background-color: rgba(200, 0, 0, 0.9);
+    color: white;
+  }
+/* Estilo del modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* Imagen dentro del modal */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  animation: zoom 0.3s;
+}
 
-        function openModal(imageSrc) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImg');
-            modalImg.src = imageSrc;
-            modal.style.display = 'flex';
-        }
+/* Botón cerrar */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-        function closeModal() {
-            document.getElementById('imageModal').style.display = 'none';
-        }
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
 
-        function displayFile(fileData) {
-            const gallery = document.getElementById('gallery');
-            const item = document.createElement('div');
-            item.classList.add('gallery-item');
+/* Animación al abrir */
+@keyframes zoom {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
 
-            const media = fileData.type.startsWith('image') ? document.createElement('img') : document.createElement('video');
-            media.src = fileData.data;
-            if (fileData.type.startsWith('video')) media.controls = true;
-            media.onclick = () => openModal(fileData.data);
-            item.appendChild(media);
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Álbum de fotos</h1>
+    <p>Sube tus momentos especiales</p>
+  </header>
+<!-- primer carrusel (fotos de nosotros) -->
+  <div class="swiper" id="carrusel">
+    <div class="button-container">
+      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
+      <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
+    </div>
 
-            const deleteBtn = document.createElement('button');
-            deleteBtn.textContent = 'X';
-            deleteBtn.classList.add('delete-btn');
-            deleteBtn.onclick = () => item.remove();
-            item.appendChild(deleteBtn);
+    <div class="swiper-wrapper" id="swiper-wrapper">
+      <!-- Imágenes iniciales -->
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja1.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja2.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja3.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja4.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja5.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja6.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja7.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja8.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja9.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja10.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja11.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja12.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja13.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja14.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja15.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja16.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja17.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja18.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja19.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja20.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja21.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja22.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja23.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja24.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja25.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja26.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja27.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja28.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/pareja29.jpg" class="card-image" />
+      </div>
+    </div>
 
-            gallery.appendChild(item);
-        }
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- segundo carrusel (fotos con todos) -->
+  <div class="swiper" id="carrusel2">
+    <div class="button-container">
+      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
+      <input type="file" id="file-upload-2" class="hidden-file-input" accept="image/*,video/*" multiple>
+    </div>
 
-        document.querySelectorAll('.file-upload').forEach((input) => {
-            input.addEventListener('change', (event) => {
-                [...event.target.files].forEach(file => {
-                    const reader = new FileReader();
-                    reader.onload = e => displayFile({ data: e.target.result, type: file.type });
-                    reader.readAsDataURL(file);
-                });
-            });
-        });
-  
+    <div class="swiper-wrapper" id="swiper-wrapper-2">
+      <!-- Imágenes iniciales -->
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia1.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia2.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia3.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia4.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia5.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia6.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia7.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia8.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia10.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia11.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/familia12.jpg" class="card-image" />
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- tercer carrusel (fotos de ella) -->
+  <div class="swiper" id="carrusel3">
+    <div class="button-container">
+      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
+      <input type="file" id="file-upload-3" class="hidden-file-input" accept="image/*,video/*" multiple>
+    </div>
+
+    <div class="swiper-wrapper" id="swiper-wrapper-3">
+      <!-- Imágenes iniciales -->
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry1.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry3.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry4.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry5.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry6.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/bry7.jpg" class="card-image" />
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- cuarto carrusel (fotos de sofi) -->
+  <div class="swiper" id="carrusel4">
+    <div class="button-container">
+      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
+      <input type="file" id="file-upload-4" class="hidden-file-input" accept="image/*,video/*" multiple>
+    </div>
+
+    <div class="swiper-wrapper" id="swiper-wrapper-4">
+      <!-- Imágenes iniciales -->
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi1.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi2.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi3.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi4.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi5.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi6.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi7.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi8.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/sofi9.jpg" class="card-image" />
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- quinto carrusel (fotos de los perros) -->
+  <div class="swiper" id="carrusel5">
+    <div class="button-container">
+      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
+      <input type="file" id="file-upload-5" class="hidden-file-input" accept="image/*,video/*" multiple>
+    </div>
+
+    <div class="swiper-wrapper" id="swiper-wrapper-5">
+      <!-- Imágenes iniciales -->
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro1.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro2.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro3.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro4.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro5.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro6.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro7.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro8.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro9.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro10.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro11.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro12.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro13.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro14.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro15.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro16.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro17.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro18.jpg" class="card-image" />
+      </div>
+      <div class="swiper-slide card-item">
+        <img src="fotos/perro19.jpg" class="card-image" />
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- Modal para ver imagen ampliada -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img" />
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  // Referencias
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const closeBtn = document.querySelector(".close");
+
+  // Escuchar todos los clics sobre las imágenes
+  document.querySelectorAll(".card-image").forEach(img => {
+    img.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Cerrar modal al hacer clic en "X"
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    modalImg.src = "";
+  });
+
+  // También cerrar si se hace clic fuera de la imagen
+  window.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+      modalImg.src = "";
+    }
+  });
 </script>
+  <script>
+  const carruseles = [
+    { id: 'carrusel', storageKey: 'galeriaMultimedia1' },
+    { id: 'carrusel2', storageKey: 'galeriaMultimedia2' },
+    { id: 'carrusel3', storageKey: 'galeriaMultimedia3' },
+    { id: 'carrusel4', storageKey: 'galeriaMultimedia4' },
+    { id: 'carrusel5', storageKey: 'galeriaMultimedia5' },
+    // Puedes agregar más aquí...
+  ];
+
+  const swipers = {};
+
+  document.addEventListener("DOMContentLoaded", () => {
+    carruseles.forEach((config, index) => {
+      const swiper = new Swiper(`#${config.id}`, {
+        loop: false,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        navigation: {
+          nextEl: `#${config.id} .swiper-button-next`,
+          prevEl: `#${config.id} .swiper-button-prev`
+        }
+      });
+      swipers[config.id] = swiper;
+
+      const datosGuardados = JSON.parse(localStorage.getItem(config.storageKey)) || [];
+      datosGuardados.forEach((item, idx) => {
+        agregarSlide(swiper, config.id, item.dataUrl, item.tipo, idx);
+      });
+
+document.querySelector(`#${config.id} .hidden-file-input`)
+      .addEventListener('change', function (event) {
+          const files = event.target.files;
+          let datos = JSON.parse(localStorage.getItem(config.storageKey)) || [];
+
+          for (let file of files) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+              const nuevoIndex = datos.length;
+              const tipo = file.type.startsWith('image') ? 'imagen' : 'video';
+
+              datos.push({ dataUrl: e.target.result, tipo });
+              localStorage.setItem(config.storageKey, JSON.stringify(datos));
+
+              agregarSlide(swiper, config.id, e.target.result, tipo, nuevoIndex);
+            };
+            reader.readAsDataURL(file);
+          }
+        });
+    });
+  });
+
+  function agregarSlide(swiperInstance, containerId, dataUrl, tipo, index) {
+    const slide = document.createElement('div');
+    slide.classList.add('swiper-slide', 'card-item');
+    slide.dataset.index = index;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'X';
+    deleteBtn.className = 'delete-button';
+    deleteBtn.onclick = () => eliminarSlide(containerId, index);
+
+    let media;
+    if (tipo === 'imagen') {
+      media = document.createElement('img');
+      media.src = dataUrl;
+      media.classList.add('card-image');
+    } else {
+      media = document.createElement('video');
+      media.src = dataUrl;
+      media.controls = true;
+      media.style.width = '100%';
+      media.style.borderRadius = '10px';
+    }
+
+    slide.appendChild(deleteBtn);
+    slide.appendChild(media);
+    swiperInstance.appendSlide(slide);
+  }
+
+  function eliminarSlide(containerId, index) {
+    const config = carruseles.find(c => c.id === containerId);
+    if (!config) return;
+
+    let datos = JSON.parse(localStorage.getItem(config.storageKey)) || [];
+    datos.splice(index, 1);
+    localStorage.setItem(config.storageKey, JSON.stringify(datos));
+
+    location.reload(); // Puedes optimizar esto sin recargar
+  }
+ </script>
 
 </body>
 </html>
