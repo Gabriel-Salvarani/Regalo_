@@ -5,14 +5,22 @@
       margin: 0;
       padding: 0;
     }
+header {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #ffc1c9;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
-    header {
-      text-align: center;
-      padding: 2rem;
-      background-color: #ffc1c9;
-      color: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+    display: flex;
+    align-items: center;      /* Centra verticalmente */
+    justify-content: center;  /* Centra horizontalmente */
+    height: 150px;            /* Altura del header */
+    padding: 0 2rem;          /* Solo padding horizontal */
+    text-align: center;
+}
+
 
     .swiper {
       background: linear-gradient(to bottom, #fbc2eb, #a6c1ee);
@@ -20,11 +28,64 @@
       position: relative;
     }
 
+  #carrusel5 {
+  background-color: rgb(253, 228, 203);
+  background-image: url("Fotos/patas.jpg");
+  background-repeat: repeat;
+  background-size: 250px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+  #carrusel4 {
+  background-color: rgb(247, 121, 121);
+  background-image: url("Fotos/ositos.jpg");
+  background-repeat: repeat;
+  background-size: 250px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+  #carrusel3 {
+  background-color: rgb(253, 228, 203);
+  background-image: url("Fotos/hojitas.jpg");
+  background-repeat: repeat;
+  background-size: 160px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+  #carrusel {
+  background-color: rgb(255, 112, 102);
+  background-image: url("Fotos/hojas-azules.avif");
+  background-repeat: repeat;
+  background-size: 250px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+  #carrusel2 {
+  background-color: rgb(253, 228, 203);
+  background-image: url("Fotos/flores.jpg");
+  background-repeat: repeat;
+  background-size: 250px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+
     .button-container {
       position: absolute;
+      display: flex;
       transform: translateY(-50%);
       z-index: 15;
-      top: 30px;
+      top: 40px;
       left: 10px;
     }
 
@@ -76,6 +137,7 @@
     top: 8px;
     right: 8px;
     font-size: 18px;
+    border-radius: 25%;
     cursor: pointer;
     z-index: 10;
   }
