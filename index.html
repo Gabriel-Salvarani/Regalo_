@@ -16,10 +16,10 @@
   </header>
 <!-- primer carrusel (fotos de nosotros) -->
   <div class="swiper" id="carrusel">
-    <div class="button-container">
-      <button class="add-button" onclick="document.getElementById('file-upload').click()">+</button>
-      <input type="file" id="file-upload" class="hidden-file-input" accept="image/*,video/*" multiple>
-    </div>
+  <div class="button-container">
+    <button class="add-button" onclick="document.querySelector('#carrusel .hidden-file-input').click()">+</button>
+    <input type="file" class="hidden-file-input" accept="image/*,video/*" multiple>
+  </div>
 
     <div class="swiper-wrapper" id="swiper-wrapper">
       <!-- Imágenes iniciales -->
